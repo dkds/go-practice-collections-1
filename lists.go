@@ -38,4 +38,13 @@ func main() {
 	highlightedPricesLength := len(highlightedPrices)
 	highlightedPricesCapacity := cap(highlightedPrices)
 	fmt.Println("Highlighted Prices: ", highlightedPrices, highlightedPricesLength, highlightedPricesCapacity)
+
+	// -------------------------------- //
+	newPrices := []float64{1, 2}
+	fmt.Println(newPrices)
+
+	newPrices[1] = 3
+	newPrices = append(newPrices, 5)
+
+	fmt.Println(newPrices)
 }
