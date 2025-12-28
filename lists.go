@@ -8,7 +8,7 @@ type product struct {
 	price float64
 }
 
-func main() {
+func Lists() {
 	var productNames [4]string = [4]string{"A book"}
 	fmt.Println(productNames)
 
@@ -61,7 +61,7 @@ func main() {
 	fmt.Println("First element: ", hobbies[0])
 	fmt.Println("Second and third element: ", hobbies[1:3])
 
-	slice1 := hobbies[:2]
+	slice1 := hobbies[0:2]
 	slice2 := hobbies[:2]
 
 	fmt.Println("Slice 1: ", slice1)
@@ -89,5 +89,13 @@ func main() {
 
 	products = append(products, product{id: 3, title: "Product 3", price: 13.0})
 
+	fmt.Println("Products: ", products)
+
+	products2 := []product{
+		{id: 4, title: "Product 4", price: 14.0},
+		{id: 5, title: "Product 5", price: 15.0},
+	}
+
+	products = append(products, products2...)
 	fmt.Println("Products: ", products)
 }
