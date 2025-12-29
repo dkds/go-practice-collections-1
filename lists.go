@@ -98,4 +98,10 @@ func Lists() {
 
 	products = append(products, products2...)
 	fmt.Println("Products: ", products)
+
+	// -------------------------------- //
+	testMake := make([]string, 2, 5)
+
+	fmt.Println("Test make size: ", len(testMake))
+	fmt.Println("Test make capacity: ", cap(testMake))
 }
