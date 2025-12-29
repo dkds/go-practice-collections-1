@@ -15,4 +15,17 @@ func Maps() {
 
 	delete(websites, "Google")
 	fmt.Println("websites: ", websites)
+
+	// -------------------------------- //
+	testMake := make(map[string]float64, 3)
+
+	testMake["key1"] = 1.1
+	testMake["key2"] = 2.2
+	testMake["key3"] = 3.3
+
+	fmt.Println("Test make map: ", testMake)
+
+	testMake["key4"] = 4.4
+
+	fmt.Println("Test make map: ", testMake)
 }
