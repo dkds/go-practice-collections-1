@@ -104,4 +104,9 @@ func Lists() {
 
 	fmt.Println("Test make size: ", len(testMake))
 	fmt.Println("Test make capacity: ", cap(testMake))
+
+	// -------------------------------- //
+	for i, product := range products {
+		fmt.Println("Index: ", i, "Product name:", product.title)
+	}
 }

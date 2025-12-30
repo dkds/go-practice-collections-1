@@ -34,4 +34,9 @@ func Maps() {
 	testMake["key4"] = 4.4
 
 	testMake.output()
+
+	// -------------------------------- //
+	for name, url := range websites {
+		fmt.Println("Name: ", name, "URL:", url)
+	}
 }
